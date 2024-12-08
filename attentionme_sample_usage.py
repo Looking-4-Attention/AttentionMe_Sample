@@ -1,12 +1,9 @@
 from attentionme import *
-import cv2
 
 image_path = 'sample_images/group1.jpg'
-image = cv2.imread(image_path)
-cv2.imwrite('image_outputs/original_image.png', image)
 
 # 객체 확대 기능
-enlargement(image_path, 'image_outputs/enlarged_image.png', 1.2)
+enlargement(image_path, 'image_outputs/enlarged_image.png', 1.5)
 
 # 줌인 기능
 zoom_in(image_path, 'image_outputs/zoomed_image.png')
