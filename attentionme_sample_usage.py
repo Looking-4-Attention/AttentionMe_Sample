@@ -1,10 +1,7 @@
-from random import choice
-from os import listdir
 from attentionme import *
 import cv2
 
-images = listdir('sample_images')
-image_path = 'sample_images/' + choice(images)
+image_path = 'sample_images/group1.jpg'
 image = cv2.imread(image_path)
 cv2.imwrite('image_outputs/original_image.png', image)
 
